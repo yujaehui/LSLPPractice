@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class LoginViewController: BaseViewController {
+    
+    let viewModel = LoginViewModel()
     
     let loginView = LoginView()
     
@@ -17,5 +21,15 @@ class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func bind() {
+        let joinButtonTap = loginView.joinButton.rx.tap.asObservable()
+        let input = LoginViewModel.Input(joinButtonTap: joinButtonTap)
+        
+        let output = viewModel.transform(input: input)
+        output.joinButtonTap.bind(with: self) { owner, _ in
+            owner.navigationController?.pushViewController(JoinViewController(), animated: true)
+        }.disposed(by: disposeBag)
     }
 }

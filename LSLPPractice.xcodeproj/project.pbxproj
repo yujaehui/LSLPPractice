@@ -27,6 +27,7 @@
 		095679532BC7CB1D0030F0CD /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679522BC7CB1D0030F0CD /* JoinView.swift */; };
 		095679552BC7CBF30030F0CD /* JoinLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679542BC7CBF30030F0CD /* JoinLabel.swift */; };
 		095679572BC7CEA60030F0CD /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679562BC7CEA60030F0CD /* JoinViewController.swift */; };
+		095679592BC7CF640030F0CD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679582BC7CF640030F0CD /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		095679522BC7CB1D0030F0CD /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
 		095679542BC7CBF30030F0CD /* JoinLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinLabel.swift; sourceTree = "<group>"; };
 		095679562BC7CEA60030F0CD /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		095679582BC7CF640030F0CD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				0956794A2BC7C7860030F0CD /* LoginView.swift */,
 				095679482BC7C7770030F0CD /* LoginViewController.swift */,
+				095679582BC7CF640030F0CD /* LoginViewModel.swift */,
 				095679522BC7CB1D0030F0CD /* JoinView.swift */,
 				095679562BC7CEA60030F0CD /* JoinViewController.swift */,
 			);
@@ -228,6 +231,7 @@
 				095679222BC7C5870030F0CD /* ViewController.swift in Sources */,
 				0956791E2BC7C5870030F0CD /* AppDelegate.swift in Sources */,
 				095679512BC7C90B0030F0CD /* Line.swift in Sources */,
+				095679592BC7CF640030F0CD /* LoginViewModel.swift in Sources */,
 				095679202BC7C5870030F0CD /* SceneDelegate.swift in Sources */,
 				095679532BC7CB1D0030F0CD /* JoinView.swift in Sources */,
 				095679572BC7CEA60030F0CD /* JoinViewController.swift in Sources */,
