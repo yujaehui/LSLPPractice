@@ -50,6 +50,8 @@ class LoginViewModel {
             }
             .debug()
             .subscribe(with: self) { owner, value in
+                UserDefaults.standard.set(value.accessToken, forKey: "accessToken")
+                UserDefaults.standard.set(value.refreshToken, forKey: "refreshToken")
                 loginSuccessTrigger.onNext(())
             } onError: { owner, error in
                 print("오류 발생")

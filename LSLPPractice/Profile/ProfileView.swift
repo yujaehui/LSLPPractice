@@ -9,19 +9,52 @@ import UIKit
 import SnapKit
 
 class ProfileView: BaseView {
-    let testLabel: UILabel = {
+    let profileImageView: UIImageView = {
+       let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "person.circle")
+        imageView.tintColor = .systemTeal
+        return imageView
+    }()
+    
+    let profileStackView: UIStackView = {
+       let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .leading
+        stackView.spacing = 10
+        return stackView
+    }()
+    
+    let nicknameLabel: UILabel = {
        let label = UILabel()
-        label.text = "Profile View"
+        label.font = .boldSystemFont(ofSize: 18)
+        return label
+    }()
+    
+    let emailLabel: UILabel = {
+       let label = UILabel()
+        label.font = .systemFont(ofSize: 16)
+        label.textColor = .systemGray
         return label
     }()
     
     override func configureHierarchy() {
-        addSubview(testLabel)
+        addSubview(profileImageView)
+        addSubview(profileStackView)
+        profileStackView.addArrangedSubview(nicknameLabel)
+        profileStackView.addArrangedSubview(emailLabel)
     }
     
     override func configureConstraints() {
-        testLabel.snp.makeConstraints { make in
-            make.center.equalTo(safeAreaLayoutGuide)
+        profileImageView.snp.makeConstraints { make in
+            make.top.equalTo(safeAreaLayoutGuide).inset(10)
+            make.leading.equalTo(safeAreaLayoutGuide).inset(20)
+            make.size.equalTo(80)
+        }
+        
+        profileStackView.snp.makeConstraints { make in
+            make.centerY.equalTo(profileImageView.snp.centerY)
+            make.leading.equalTo(profileImageView.snp.trailing).offset(10)
         }
     }
 }

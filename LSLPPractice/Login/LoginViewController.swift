@@ -36,9 +36,14 @@ class LoginViewController: BaseViewController {
         }.disposed(by: disposeBag)
         output.loginValidation.drive(loginView.loginButton.rx.isEnabled).disposed(by: disposeBag)
         output.loginSuccessTrigger.drive(with: self) { owner, _ in
-            let vc = ProfileViewController()
-            vc.modalPresentationStyle = .fullScreen
-            owner.present(vc, animated: true)
+//            let vc = ProfileViewController()
+//            vc.modalPresentationStyle = .fullScreen
+//            owner.present(vc, animated: true)
+            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+            let sceneDelegate = windowScene?.delegate as? SceneDelegate
+            let vc = UINavigationController(rootViewController: ProfileViewController())
+            sceneDelegate?.window?.rootViewController = vc
+            sceneDelegate?.window?.makeKeyAndVisible()
         }.disposed(by: disposeBag)
     }
 }

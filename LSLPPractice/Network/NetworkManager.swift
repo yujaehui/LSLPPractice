@@ -50,4 +50,24 @@ struct NetworkManager {
             return Disposables.create()
         }
     }
+    
+    static func profileCheck() -> Single<ProfileModel> {
+        return Single<ProfileModel>.create { single in
+            do {
+                let urlRequest = try Router.profileCheck.asURLRequest()
+                AF.request(urlRequest)
+                    .responseDecodable(of: ProfileModel.self) { response in
+                        switch response.result {
+                        case .success(let success):
+                            single(.success(success))
+                        case .failure(let failure):
+                            single(.failure(failure))
+                        }
+                    }
+            } catch {
+                single(.failure(error))
+            }
+            return Disposables.create()
+        }
+    }
 }
