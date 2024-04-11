@@ -38,7 +38,7 @@ class LoginViewController: BaseViewController {
         output.loginSuccessTrigger.drive(with: self) { owner, _ in
             let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
             let sceneDelegate = windowScene?.delegate as? SceneDelegate
-            let vc = UINavigationController(rootViewController: ProfileViewController())
+            let vc = UINavigationController(rootViewController: HomeViewController())
             sceneDelegate?.window?.rootViewController = vc
             sceneDelegate?.window?.makeKeyAndVisible()
         }.disposed(by: disposeBag)

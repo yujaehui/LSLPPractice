@@ -43,6 +43,9 @@
 		095679772BC8032F0030F0CD /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679762BC8032F0030F0CD /* ProfileModel.swift */; };
 		095679792BC803CE0030F0CD /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679782BC803CE0030F0CD /* ProfileViewModel.swift */; };
 		0956797B2BC809D10030F0CD /* WithdrawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956797A2BC809D10030F0CD /* WithdrawModel.swift */; };
+		0956797D2BC80BDC0030F0CD /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956797C2BC80BDC0030F0CD /* TokenModel.swift */; };
+		095679802BC821500030F0CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956797F2BC821500030F0CD /* HomeViewController.swift */; };
+		095679822BC821580030F0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679812BC821580030F0CD /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		095679762BC8032F0030F0CD /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		095679782BC803CE0030F0CD /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		0956797A2BC809D10030F0CD /* WithdrawModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawModel.swift; sourceTree = "<group>"; };
+		0956797C2BC80BDC0030F0CD /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		0956797F2BC821500030F0CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		095679812BC821580030F0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 		0956791C2BC7C5870030F0CD /* LSLPPractice */ = {
 			isa = PBXGroup;
 			children = (
+				0956797E2BC821490030F0CD /* Home */,
 				095679712BC7EAD60030F0CD /* Profile */,
 				0956795C2BC7DF410030F0CD /* Network */,
 				0956794F2BC7C8F40030F0CD /* Custom */,
@@ -203,6 +210,7 @@
 				0956796F2BC7E5350030F0CD /* LoginModel.swift */,
 				095679762BC8032F0030F0CD /* ProfileModel.swift */,
 				0956797A2BC809D10030F0CD /* WithdrawModel.swift */,
+				0956797C2BC80BDC0030F0CD /* TokenModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +223,15 @@
 				095679782BC803CE0030F0CD /* ProfileViewModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		0956797E2BC821490030F0CD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				095679812BC821580030F0CD /* HomeView.swift */,
+				0956797F2BC821500030F0CD /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +322,7 @@
 				095679492BC7C7770030F0CD /* LoginViewController.swift in Sources */,
 				095679792BC803CE0030F0CD /* ProfileViewModel.swift in Sources */,
 				0956796B2BC7E48B0030F0CD /* NetworkManager.swift in Sources */,
+				095679802BC821500030F0CD /* HomeViewController.swift in Sources */,
 				0956794E2BC7C7FF0030F0CD /* UIButton.Configuration+Extension.swift in Sources */,
 				0956796E2BC7E4F50030F0CD /* JoinModel.swift in Sources */,
 				095679642BC7E0D30030F0CD /* Router.swift in Sources */,
@@ -315,6 +333,7 @@
 				095679462BC7C6E90030F0CD /* BaseViewController.swift in Sources */,
 				095679692BC7E3BF0030F0CD /* LoginQuery.swift in Sources */,
 				095679772BC8032F0030F0CD /* ProfileModel.swift in Sources */,
+				095679822BC821580030F0CD /* HomeView.swift in Sources */,
 				095679702BC7E5350030F0CD /* LoginModel.swift in Sources */,
 				095679222BC7C5870030F0CD /* ViewController.swift in Sources */,
 				0956791E2BC7C5870030F0CD /* AppDelegate.swift in Sources */,
@@ -328,6 +347,7 @@
 				095679752BC7EAF90030F0CD /* ProfileViewController.swift in Sources */,
 				095679442BC7C6B80030F0CD /* BaseView.swift in Sources */,
 				095679622BC7E0410030F0CD /* TargetType.swift in Sources */,
+				0956797D2BC80BDC0030F0CD /* TokenModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
