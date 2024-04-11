@@ -28,6 +28,18 @@
 		095679552BC7CBF30030F0CD /* JoinLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679542BC7CBF30030F0CD /* JoinLabel.swift */; };
 		095679572BC7CEA60030F0CD /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679562BC7CEA60030F0CD /* JoinViewController.swift */; };
 		095679592BC7CF640030F0CD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679582BC7CF640030F0CD /* LoginViewModel.swift */; };
+		0956795B2BC7D0C80030F0CD /* JoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956795A2BC7D0C80030F0CD /* JoinViewModel.swift */; };
+		0956795E2BC7DF4E0030F0CD /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956795D2BC7DF4E0030F0CD /* APIKey.swift */; };
+		095679602BC7DFA00030F0CD /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956795F2BC7DFA00030F0CD /* HTTPHeader.swift */; };
+		095679622BC7E0410030F0CD /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679612BC7E0410030F0CD /* TargetType.swift */; };
+		095679642BC7E0D30030F0CD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679632BC7E0D30030F0CD /* Router.swift */; };
+		095679672BC7E3A10030F0CD /* JoinQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679662BC7E3A10030F0CD /* JoinQuery.swift */; };
+		095679692BC7E3BF0030F0CD /* LoginQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679682BC7E3BF0030F0CD /* LoginQuery.swift */; };
+		0956796B2BC7E48B0030F0CD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956796A2BC7E48B0030F0CD /* NetworkManager.swift */; };
+		0956796E2BC7E4F50030F0CD /* JoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956796D2BC7E4F50030F0CD /* JoinModel.swift */; };
+		095679702BC7E5350030F0CD /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956796F2BC7E5350030F0CD /* LoginModel.swift */; };
+		095679732BC7EAE90030F0CD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679722BC7EAE90030F0CD /* ProfileView.swift */; };
+		095679752BC7EAF90030F0CD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679742BC7EAF90030F0CD /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +62,18 @@
 		095679542BC7CBF30030F0CD /* JoinLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinLabel.swift; sourceTree = "<group>"; };
 		095679562BC7CEA60030F0CD /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		095679582BC7CF640030F0CD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0956795A2BC7D0C80030F0CD /* JoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewModel.swift; sourceTree = "<group>"; };
+		0956795D2BC7DF4E0030F0CD /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		0956795F2BC7DFA00030F0CD /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		095679612BC7E0410030F0CD /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		095679632BC7E0D30030F0CD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		095679662BC7E3A10030F0CD /* JoinQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinQuery.swift; sourceTree = "<group>"; };
+		095679682BC7E3BF0030F0CD /* LoginQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginQuery.swift; sourceTree = "<group>"; };
+		0956796A2BC7E48B0030F0CD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0956796D2BC7E4F50030F0CD /* JoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinModel.swift; sourceTree = "<group>"; };
+		0956796F2BC7E5350030F0CD /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		095679722BC7EAE90030F0CD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		095679742BC7EAF90030F0CD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +110,8 @@
 		0956791C2BC7C5870030F0CD /* LSLPPractice */ = {
 			isa = PBXGroup;
 			children = (
+				095679712BC7EAD60030F0CD /* Profile */,
+				0956795C2BC7DF410030F0CD /* Network */,
 				0956794F2BC7C8F40030F0CD /* Custom */,
 				0956794C2BC7C7F10030F0CD /* Extension */,
 				095679472BC7C76E0030F0CD /* Login */,
@@ -119,6 +145,7 @@
 				095679582BC7CF640030F0CD /* LoginViewModel.swift */,
 				095679522BC7CB1D0030F0CD /* JoinView.swift */,
 				095679562BC7CEA60030F0CD /* JoinViewController.swift */,
+				0956795A2BC7D0C80030F0CD /* JoinViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -138,6 +165,47 @@
 				095679542BC7CBF30030F0CD /* JoinLabel.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		0956795C2BC7DF410030F0CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				095679652BC7E3920030F0CD /* Query */,
+				0956796C2BC7E4C30030F0CD /* Model */,
+				0956795D2BC7DF4E0030F0CD /* APIKey.swift */,
+				0956795F2BC7DFA00030F0CD /* HTTPHeader.swift */,
+				095679612BC7E0410030F0CD /* TargetType.swift */,
+				095679632BC7E0D30030F0CD /* Router.swift */,
+				0956796A2BC7E48B0030F0CD /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		095679652BC7E3920030F0CD /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				095679662BC7E3A10030F0CD /* JoinQuery.swift */,
+				095679682BC7E3BF0030F0CD /* LoginQuery.swift */,
+			);
+			path = Query;
+			sourceTree = "<group>";
+		};
+		0956796C2BC7E4C30030F0CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0956796D2BC7E4F50030F0CD /* JoinModel.swift */,
+				0956796F2BC7E5350030F0CD /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		095679712BC7EAD60030F0CD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				095679722BC7EAE90030F0CD /* ProfileView.swift */,
+				095679742BC7EAF90030F0CD /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,19 +291,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0956795B2BC7D0C80030F0CD /* JoinViewModel.swift in Sources */,
 				095679552BC7CBF30030F0CD /* JoinLabel.swift in Sources */,
 				095679492BC7C7770030F0CD /* LoginViewController.swift in Sources */,
+				0956796B2BC7E48B0030F0CD /* NetworkManager.swift in Sources */,
 				0956794E2BC7C7FF0030F0CD /* UIButton.Configuration+Extension.swift in Sources */,
+				0956796E2BC7E4F50030F0CD /* JoinModel.swift in Sources */,
+				095679642BC7E0D30030F0CD /* Router.swift in Sources */,
+				095679602BC7DFA00030F0CD /* HTTPHeader.swift in Sources */,
+				0956795E2BC7DF4E0030F0CD /* APIKey.swift in Sources */,
+				095679672BC7E3A10030F0CD /* JoinQuery.swift in Sources */,
 				0956794B2BC7C7860030F0CD /* LoginView.swift in Sources */,
 				095679462BC7C6E90030F0CD /* BaseViewController.swift in Sources */,
+				095679692BC7E3BF0030F0CD /* LoginQuery.swift in Sources */,
+				095679702BC7E5350030F0CD /* LoginModel.swift in Sources */,
 				095679222BC7C5870030F0CD /* ViewController.swift in Sources */,
 				0956791E2BC7C5870030F0CD /* AppDelegate.swift in Sources */,
+				095679732BC7EAE90030F0CD /* ProfileView.swift in Sources */,
 				095679512BC7C90B0030F0CD /* Line.swift in Sources */,
 				095679592BC7CF640030F0CD /* LoginViewModel.swift in Sources */,
 				095679202BC7C5870030F0CD /* SceneDelegate.swift in Sources */,
 				095679532BC7CB1D0030F0CD /* JoinView.swift in Sources */,
 				095679572BC7CEA60030F0CD /* JoinViewController.swift in Sources */,
+				095679752BC7EAF90030F0CD /* ProfileViewController.swift in Sources */,
 				095679442BC7C6B80030F0CD /* BaseView.swift in Sources */,
+				095679622BC7E0410030F0CD /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
