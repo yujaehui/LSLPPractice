@@ -33,6 +33,20 @@ extension UIButton.Configuration {
         config.baseForegroundColor = .systemTeal
         return config
     }
+    
+    static func join2() -> Self {
+        var config = UIButton.Configuration.filled()
+        
+        var titleAttr = AttributedString.init("회원가입")
+        titleAttr.font = .boldSystemFont(ofSize: 16)
+        config.attributedTitle = titleAttr
+        config.titleAlignment = .center
+        
+        config.baseForegroundColor = .white
+        config.baseBackgroundColor = .systemTeal
+        config.cornerStyle = .fixed
+        return config
+    }
 }
 
 
