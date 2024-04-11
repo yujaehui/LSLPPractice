@@ -46,6 +46,7 @@
 		0956797D2BC80BDC0030F0CD /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956797C2BC80BDC0030F0CD /* TokenModel.swift */; };
 		095679802BC821500030F0CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956797F2BC821500030F0CD /* HomeViewController.swift */; };
 		095679822BC821580030F0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679812BC821580030F0CD /* HomeView.swift */; };
+		095679842BC842300030F0CD /* AuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095679832BC842300030F0CD /* AuthInterceptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		0956797C2BC80BDC0030F0CD /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		0956797F2BC821500030F0CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		095679812BC821580030F0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		095679832BC842300030F0CD /* AuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInterceptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				095679612BC7E0410030F0CD /* TargetType.swift */,
 				095679632BC7E0D30030F0CD /* Router.swift */,
 				0956796A2BC7E48B0030F0CD /* NetworkManager.swift */,
+				095679832BC842300030F0CD /* AuthInterceptor.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				095679692BC7E3BF0030F0CD /* LoginQuery.swift in Sources */,
 				095679772BC8032F0030F0CD /* ProfileModel.swift in Sources */,
 				095679822BC821580030F0CD /* HomeView.swift in Sources */,
+				095679842BC842300030F0CD /* AuthInterceptor.swift in Sources */,
 				095679702BC7E5350030F0CD /* LoginModel.swift in Sources */,
 				095679222BC7C5870030F0CD /* ViewController.swift in Sources */,
 				0956791E2BC7C5870030F0CD /* AppDelegate.swift in Sources */,
