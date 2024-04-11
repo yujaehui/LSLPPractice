@@ -47,6 +47,20 @@ extension UIButton.Configuration {
         config.cornerStyle = .fixed
         return config
     }
+    
+    static func withdraw() -> Self {
+        var config = UIButton.Configuration.filled()
+        
+        var titleAttr = AttributedString.init("회원탈퇴")
+        titleAttr.font = .boldSystemFont(ofSize: 16)
+        config.attributedTitle = titleAttr
+        config.titleAlignment = .center
+        
+        config.baseForegroundColor = .white
+        config.baseBackgroundColor = .systemTeal
+        config.cornerStyle = .fixed
+        return config
+    }
 }
 
 

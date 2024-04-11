@@ -14,15 +14,18 @@ class ProfileViewModel {
     
     struct Input {
         let viewDidLoadTrigger: Observable<Void>
+        let withdrawButtonTap: Observable<Void>
     }
     
     struct Output {
         let profile: PublishSubject<ProfileModel>
+        let withdrawSuccessTrigger: PublishSubject<Void>
     }
     
     func transform(input: Input) -> Output {
         
         let profile = PublishSubject<ProfileModel>()
+        let withdrawSuccessTrigger = PublishSubject<Void>()
         
         input.viewDidLoadTrigger
             .flatMap { _ in
@@ -32,6 +35,16 @@ class ProfileViewModel {
                 profile.onNext(value)
             }.disposed(by: disposeBag)
         
-        return Output(profile: profile)
+        input.withdrawButtonTap
+            .flatMap { _ in
+                NetworkManager.withdraw()
+            }
+            .debug()
+            .subscribe(with: self) { owner, value in
+                withdrawSuccessTrigger.onNext(())
+            }.disposed(by: disposeBag)
+        
+        
+        return Output(profile: profile, withdrawSuccessTrigger: withdrawSuccessTrigger)
     }
 }

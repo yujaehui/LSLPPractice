@@ -70,4 +70,24 @@ struct NetworkManager {
             return Disposables.create()
         }
     }
+    
+    static func withdraw() -> Single<WithdrawModel> {
+        return Single<WithdrawModel>.create { single in
+            do {
+                let urlRequest = try Router.withdraw.asURLRequest()
+                AF.request(urlRequest)
+                    .responseDecodable(of: WithdrawModel.self) { response in
+                        switch response.result {
+                        case .success(let success):
+                            single(.success(success))
+                        case .failure(let failure):
+                            single(.failure(failure))
+                        }
+                    }
+            } catch {
+                single(.failure(error))
+            }
+            return Disposables.create()
+        }
+    }
 }

@@ -38,11 +38,18 @@ class ProfileView: BaseView {
         return label
     }()
     
+    let withdrawButton: UIButton = {
+       let button = UIButton()
+        button.configuration = .withdraw()
+        return button
+    }()
+    
     override func configureHierarchy() {
         addSubview(profileImageView)
         addSubview(profileStackView)
         profileStackView.addArrangedSubview(nicknameLabel)
         profileStackView.addArrangedSubview(emailLabel)
+        addSubview(withdrawButton)
     }
     
     override func configureConstraints() {
@@ -55,6 +62,12 @@ class ProfileView: BaseView {
         profileStackView.snp.makeConstraints { make in
             make.centerY.equalTo(profileImageView.snp.centerY)
             make.leading.equalTo(profileImageView.snp.trailing).offset(10)
+        }
+        
+        withdrawButton.snp.makeConstraints { make in
+            make.bottom.equalTo(safeAreaLayoutGuide).inset(10)
+            make.horizontalEdges.equalTo(safeAreaLayoutGuide).inset(20)
+            make.height.equalTo(40)
         }
     }
 }
